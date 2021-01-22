@@ -2,16 +2,16 @@ class DevelopClient {
   final String name;
   final String email;
   final int password;
-  final String image;
+//  final String image;
 
-  DevelopClient({this.name, this.email, this.password, this.image});
+  DevelopClient({this.name, this.email, this.password});
 
   factory DevelopClient.fromJson(Map<String, dynamic> json) {
     return DevelopClient(
       name: json['nome'],
       email: json['email'],
       password: json['senha'],
-      image: json['imagem'],
+   //   image: json['imagem'],
     );
   }
 
@@ -20,7 +20,7 @@ class DevelopClient {
     data['nome'] = this.name;
     data['email'] = this.email;
     data['senha'] = this.password;
-    data['imagem'] = this.image;
+   // data['imagem'] = this.image;
     return data;
   }
 

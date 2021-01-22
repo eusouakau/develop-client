@@ -19,7 +19,7 @@ class UsersWebService extends BaseClient {
     token = tokenChannel;
   }
 
-  /// Web Serive: login the Orion Users microservices
+  /// Web Service: login the Orion Users microservices
   /// and returns [Future<http.Response>]
   Future<http.Response> login(String email, String password) {
     var url = wsURL + 'login';
